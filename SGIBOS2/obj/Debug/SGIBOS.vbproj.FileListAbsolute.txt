@@ -91,3 +91,5 @@ C:\Users\alexi\OneDrive\Escritorio\SGIBOS2\obj\Debug\SGIBOS.xml
 C:\Users\alexi\OneDrive\Escritorio\SGIBOS2\obj\Debug\SGIBOS.pdb
 C:\Users\alexi\OneDrive\Escritorio\SGIBOS2\bin\Debug\itextsharp.dll
 C:\Users\alexi\OneDrive\Escritorio\SGIBOS2\bin\Debug\itextsharp.xml
+C:\Users\alexi\OneDrive\Escritorio\SGIBOS2\obj\Debug\SGIBOS.Categorias.resources
+C:\Users\alexi\OneDrive\Escritorio\SGIBOS2\obj\Debug\SGIBOS.NuevaCategoria.resources

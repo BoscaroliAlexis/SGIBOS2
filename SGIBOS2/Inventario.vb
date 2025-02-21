@@ -64,6 +64,11 @@ Public Class Inventario
     Private Sub btnBuscarInventario_Click(sender As Object, e As EventArgs) Handles btnBuscarInventario.Click
         CargarDatos(txtBuscarInventario.Text)
     End Sub
+
+    Private Sub btnGesCat_Click(sender As Object, e As EventArgs) Handles btnGesCat.Click
+        Categorias.StartPosition = FormStartPosition.CenterScreen
+        Categorias.Show()
+    End Sub
 End Class
 
 
