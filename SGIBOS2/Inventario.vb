@@ -1,16 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
 
-
 Public Class Inventario
 
     Private conexion As MySqlConnection
     Private adaptador As MySqlDataAdapter
     Private tabla As DataTable
-
-    'Private Sub btnGenerarReporteInv_Click(sender As Object, e As EventArgs) Handles btnGenerarReporteInv.Click
-    '  Reportes.StartPosition = FormStartPosition.CenterScreen
-    '   Reportes.Show()
-    ' End Sub
 
     Private Sub btnAñadirInv_Click(sender As Object, e As EventArgs) Handles btnAñadirInv.Click
         NuevoProducto.StartPosition = FormStartPosition.CenterScreen
@@ -18,9 +12,8 @@ Public Class Inventario
     End Sub
 
     Private Sub Inventario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        CargarDatos()
     End Sub
-
 
     ' Método para cargar datos en el DataGridView
     Private Sub CargarDatos(Optional ByVal busqueda As String = "")
@@ -30,12 +23,17 @@ Public Class Inventario
             conexion = New MySqlConnection(cadenaConexion)
             conexion.Open()
 
-            ' Si hay texto en el campo de búsqueda, se ajusta la consulta
-            Dim consulta As String
-            If busqueda = "" Then
-                consulta = "SELECT * FROM productos" ' Muestra todos los registros
-            Else
-                consulta = "SELECT * FROM productos WHERE nombre LIKE @busqueda"
+            ' Consulta con JOIN para mostrar los nombres de categoría y proveedor
+            Dim consulta As String = "SELECT p.id_producto, p.nombre AS Producto, p.descripcion, " &
+                                     "p.precio, p.cantidad_stock, c.nombre AS Categoria, pr.nombre AS Proveedor, " &
+                                     "p.fecha_creacion, p.activo " &
+                                     "FROM productos p " &
+                                     "LEFT JOIN categorias c ON p.id_categoria = c.id_categoria " &
+                                     "LEFT JOIN proveedores pr ON p.id_proveedor = pr.id_proveedor"
+
+            ' Si hay un término de búsqueda, agregar condición WHERE
+            If busqueda <> "" Then
+                consulta &= " WHERE p.nombre LIKE @busqueda"
             End If
 
             ' Crear y ejecutar comando
@@ -55,11 +53,6 @@ Public Class Inventario
         End Try
     End Sub
 
-    ' Evento Load para cargar datos al iniciar el formulario
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CargarDatos()
-    End Sub
-
     ' Evento para buscar cuando se presiona el botón
     Private Sub btnBuscarInventario_Click(sender As Object, e As EventArgs) Handles btnBuscarInventario.Click
         CargarDatos(txtBuscarInventario.Text)
@@ -69,8 +62,25 @@ Public Class Inventario
         Categorias.StartPosition = FormStartPosition.CenterScreen
         Categorias.Show()
     End Sub
+
+    Private Sub dgvInventario_MouseClick(sender As Object, e As MouseEventArgs) Handles dgvInventario.MouseClick
+        ' Verificar si se hizo clic derecho
+        If e.Button = MouseButtons.Right Then
+            ' Obtener la fila seleccionada
+            Dim hit As DataGridView.HitTestInfo = dgvInventario.HitTest(e.X, e.Y)
+
+            ' Verificar si se hizo clic en una fila válida
+            If hit.RowIndex >= 0 Then
+                ' Seleccionar la fila
+                dgvInventario.ClearSelection()
+                dgvInventario.Rows(hit.RowIndex).Selected = True
+
+                ' Mostrar el menú contextual
+                cmsActEli2.Show(dgvInventario, e.Location)
+            End If
+        End If
+    End Sub
+
 End Class
-
-
 
 
