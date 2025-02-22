@@ -49,5 +49,7 @@ Public Class NuevoCliente
         End Try
     End Sub
 
+    Private Sub NuevoCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class

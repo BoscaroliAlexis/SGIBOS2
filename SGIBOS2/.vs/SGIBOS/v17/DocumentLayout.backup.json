@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|c:\\users\\alexi\\onedrive\\documentos\\github\\sgibos2\\sgibos2\\inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\proveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:proveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|c:\\users\\alexi\\onedrive\\documentos\\github\\sgibos2\\sgibos2\\nuevoproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevoproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevocliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevocliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevocliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevocliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevoproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevoproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\proveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:proveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:clientes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|c:\\users\\alexi\\onedrive\\documentos\\github\\sgibos2\\sgibos2\\inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\categorias.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -27,16 +63,8 @@
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevacategoria.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevocliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevocliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\categorias.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:categorias.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevocliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevocliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevacategoria.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -49,22 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevoproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevoproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\proveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:proveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\mysql\\data.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -83,14 +95,6 @@
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevoproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevoproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\proveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:proveedores.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
@@ -102,36 +106,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Inventario.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb",
-              "RelativeDocumentMoniker": "Inventario.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb [Design]",
-              "RelativeToolTip": "Inventario.vb [Design]",
+              "DocumentIndex": 3,
+              "Title": "NuevoProveedor.vb",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoProveedor.vb",
+              "RelativeDocumentMoniker": "NuevoProveedor.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoProveedor.vb",
+              "RelativeToolTip": "NuevoProveedor.vb",
+              "ViewState": "AgIAACYAAAAAAAAAAAAawCEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-18T14:01:57.713Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Inventario.vb",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb",
-              "RelativeDocumentMoniker": "Inventario.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb",
-              "RelativeToolTip": "Inventario.vb",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAqwE4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-18T14:02:00.017Z",
+              "WhenOpened": "2025-02-22T13:34:19.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "NuevoCliente.vb",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoCliente.vb",
+              "RelativeDocumentMoniker": "NuevoCliente.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoCliente.vb",
+              "RelativeToolTip": "NuevoCliente.vb",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-21T05:20:06.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reportes.vb",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Reportes.vb",
+              "RelativeDocumentMoniker": "Reportes.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Reportes.vb",
+              "RelativeToolTip": "Reportes.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-21T15:20:21.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Clientes.vb",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Clientes.vb",
+              "RelativeDocumentMoniker": "Clientes.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Clientes.vb",
+              "RelativeToolTip": "Clientes.vb",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-21T05:03:19.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Proveedores.vb",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Proveedores.vb",
+              "RelativeDocumentMoniker": "Proveedores.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Proveedores.vb",
+              "RelativeToolTip": "Proveedores.vb",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAqwDAAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-18T14:10:50.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Reportes.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Reportes.vb",
+              "RelativeDocumentMoniker": "Reportes.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Reportes.vb [Design]",
+              "RelativeToolTip": "Reportes.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-21T15:16:07.1Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dashboard.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Dashboard.vb",
+              "RelativeDocumentMoniker": "Dashboard.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Dashboard.vb [Design]",
+              "RelativeToolTip": "Dashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-21T00:16:12.022Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NuevoCliente.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoCliente.vb",
+              "RelativeDocumentMoniker": "NuevoCliente.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoCliente.vb [Design]",
+              "RelativeToolTip": "NuevoCliente.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-21T05:20:02.601Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NuevoProveedor.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoProveedor.vb",
+              "RelativeDocumentMoniker": "NuevoProveedor.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoProveedor.vb [Design]",
+              "RelativeToolTip": "NuevoProveedor.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-18T14:05:15.192Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Proveedores.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Proveedores.vb",
+              "RelativeDocumentMoniker": "Proveedores.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Proveedores.vb [Design]",
+              "RelativeToolTip": "Proveedores.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-18T14:04:52.65Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Clientes.vb [Design]",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Clientes.vb",
               "RelativeDocumentMoniker": "Clientes.vb",
@@ -143,20 +247,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Clientes.vb",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Clientes.vb",
-              "RelativeDocumentMoniker": "Clientes.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Clientes.vb",
-              "RelativeToolTip": "Clientes.vb",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Inventario.vb",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb",
+              "RelativeDocumentMoniker": "Inventario.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb",
+              "RelativeToolTip": "Inventario.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-21T05:03:19.604Z",
+              "WhenOpened": "2025-02-18T14:02:00.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
+              "Title": "Inventario.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb",
+              "RelativeDocumentMoniker": "Inventario.vb",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb [Design]",
+              "RelativeToolTip": "Inventario.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-18T14:01:57.713Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "NuevaCategoria.vb [Design]",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevaCategoria.vb",
               "RelativeDocumentMoniker": "NuevaCategoria.vb",
@@ -167,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Categorias.vb",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Categorias.vb",
               "RelativeDocumentMoniker": "Categorias.vb",
@@ -179,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Categorias.vb [Design]",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Categorias.vb",
               "RelativeDocumentMoniker": "Categorias.vb",
@@ -190,30 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NuevoCliente.vb",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoCliente.vb",
-              "RelativeDocumentMoniker": "NuevoCliente.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoCliente.vb",
-              "RelativeToolTip": "NuevoCliente.vb",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-21T05:20:06.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NuevoCliente.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoCliente.vb",
-              "RelativeDocumentMoniker": "NuevoCliente.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoCliente.vb [Design]",
-              "RelativeToolTip": "NuevoCliente.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-21T05:20:02.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "NuevaCategoria.vb",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevaCategoria.vb",
               "RelativeDocumentMoniker": "NuevaCategoria.vb",
@@ -225,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Ventas.vb",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Ventas.vb",
               "RelativeDocumentMoniker": "Ventas.vb",
@@ -237,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "NuevoProducto.vb [Design]",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoProducto.vb",
               "RelativeDocumentMoniker": "NuevoProducto.vb",
@@ -248,30 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Proveedores.vb",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Proveedores.vb",
-              "RelativeDocumentMoniker": "Proveedores.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Proveedores.vb",
-              "RelativeToolTip": "Proveedores.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-18T14:10:50.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Dashboard.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Dashboard.vb",
-              "RelativeDocumentMoniker": "Dashboard.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Escritorio\\SGIBOS2\\Dashboard.vb [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Escritorio\\SGIBOS2\\Dashboard.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-21T00:16:12.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Data.vb",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\MySql\\Data.vb",
               "RelativeDocumentMoniker": "MySql\\Data.vb",
@@ -283,30 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Reportes.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Reportes.vb",
-              "RelativeDocumentMoniker": "Reportes.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Escritorio\\SGIBOS2\\Reportes.vb [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Escritorio\\SGIBOS2\\Reportes.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-21T15:16:07.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Reportes.vb",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Reportes.vb",
-              "RelativeDocumentMoniker": "Reportes.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Reportes.vb",
-              "RelativeToolTip": "Reportes.vb",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwDkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-21T15:20:21.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "NuevoVenta.vb",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoVenta.vb",
               "RelativeDocumentMoniker": "NuevoVenta.vb",
@@ -318,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "NuevoVenta.vb [Design]",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoVenta.vb",
               "RelativeDocumentMoniker": "NuevoVenta.vb",
@@ -329,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Ventas.vb [Design]",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Ventas.vb",
               "RelativeDocumentMoniker": "Ventas.vb",
@@ -340,29 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "NuevoProveedor.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoProveedor.vb",
-              "RelativeDocumentMoniker": "NuevoProveedor.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Escritorio\\SGIBOS2\\NuevoProveedor.vb [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Escritorio\\SGIBOS2\\NuevoProveedor.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-18T14:05:15.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Proveedores.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Proveedores.vb",
-              "RelativeDocumentMoniker": "Proveedores.vb",
-              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Escritorio\\SGIBOS2\\Proveedores.vb [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Escritorio\\SGIBOS2\\Proveedores.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-18T14:04:52.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Dashboard.vb",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Dashboard.vb",
               "RelativeDocumentMoniker": "Dashboard.vb",
@@ -370,7 +395,8 @@
               "RelativeToolTip": "Dashboard.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-18T13:47:01.557Z"
+              "WhenOpened": "2025-02-18T13:47:01.557Z",
+              "EditorCaption": ""
             }
           ]
         }
