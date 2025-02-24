@@ -5,6 +5,7 @@ Public Class Inventario
     Private conexion As MySqlConnection
     Private adaptador As MySqlDataAdapter
     Private tabla As DataTable
+    Private idProducto As Integer
 
     Private Sub btnAñadirInv_Click(sender As Object, e As EventArgs) Handles btnAñadirInv.Click
         NuevoProducto.StartPosition = FormStartPosition.CenterScreen
@@ -78,6 +79,79 @@ Public Class Inventario
                 ' Mostrar el menú contextual
                 cmsActEli2.Show(dgvInventario, e.Location)
             End If
+        End If
+    End Sub
+
+    Private Sub ActualizarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ActualizarToolStripMenuItem.Click
+
+        dgvInventario.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+
+        ' Verificar si hay una fila seleccionada
+        If dgvInventario.SelectedRows.Count > 0 Then
+            ' Obtener los datos del cliente seleccionado
+            Dim idCliente As Integer = dgvInventario.SelectedRows(0).Cells("id_producto").Value
+            Dim nombre As String = dgvInventario.SelectedRows(0).Cells("nombre").Value.ToString()
+            Dim descripcion As String = dgvInventario.SelectedRows(0).Cells("descripcion").Value.ToString()
+            Dim precio As String = dgvInventario.SelectedRows(0).Cells("precio").Value.ToString()
+            Dim cantidadStock As String = dgvInventario.SelectedRows(0).Cells("cantidad_stock").Value.ToString()
+            Dim categoria As String = dgvInventario.SelectedRows(0).Cells("id_categoria").Value.ToString()
+            Dim proveedor As String = dgvInventario.SelectedRows(0).Cells("id_proveedor").Value.ToString()
+            Dim activo As String = dgvInventario.SelectedRows(0).Cells("activo").Value.ToString()
+
+
+            ' Crear instancia de NuevoCliente y pasar los datos
+            Dim formulario As New NuevoProducto()
+            formulario.idProducto = idProducto
+            formulario.txtNombre.Text = nombre
+            formulario.txtDescripcion.Text = descripcion
+            formulario.txtPrecio.Text = precio.ToString()
+            formulario.txtCantidadStock.Text = cantidadStock.ToString()
+            formulario.cmbCategoria.SelectedValue = categoria
+            formulario.cmbProveedor.SelectedValue = proveedor
+            formulario.cmbActivo.SelectedValue = If(activo, "Sí", "No")
+
+
+            ' Mostrar formulario
+            formulario.ShowDialog()
+
+            ' Actualizar DataGridView después de cerrar el formulario
+            CargarDatos()
+        Else
+            MessageBox.Show("Seleccione un cliente para actualizar.")
+        End If
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
+        ' Verificar si hay una fila seleccionada
+        If dgvInventario.SelectedRows.Count > 0 Then
+            ' Obtener el ID del cliente seleccionado
+            Dim idProducto As Integer = dgvInventario.SelectedRows(0).Cells("id_producto").Value
+
+            ' Confirmar eliminación
+            Dim confirmacion As DialogResult = MessageBox.Show("¿Estás seguro de que deseas eliminar este producto?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+            If confirmacion = DialogResult.Yes Then
+                ' Cadena de conexión
+                Dim cadenaConexion As String = "Server=localhost;Database=tiendadb;Uid=root;Pwd=mysql;"
+                Dim conexion As New MySqlConnection(cadenaConexion)
+
+                Try
+                    conexion.Open()
+                    Dim consulta As String = "DELETE FROM Productos WHERE id_producto = @id"
+                    Dim comando As New MySqlCommand(consulta, conexion)
+                    comando.Parameters.AddWithValue("@id", idProducto)
+                    comando.ExecuteNonQuery()
+
+                    MessageBox.Show("Producto eliminado correctamente.")
+                    CargarDatos() ' Refrescar el DataGridView
+                Catch ex As Exception
+                    MessageBox.Show("Error al eliminar: " & ex.Message)
+                Finally
+                    conexion.Close()
+                End Try
+            End If
+        Else
+            MessageBox.Show("Por favor, seleccione un cliente para eliminar.")
         End If
     End Sub
 
