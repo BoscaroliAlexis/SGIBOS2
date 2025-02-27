@@ -90,12 +90,12 @@ Public Class Inventario
         If dgvInventario.SelectedRows.Count > 0 Then
             ' Obtener los datos del cliente seleccionado
             Dim idCliente As Integer = dgvInventario.SelectedRows(0).Cells("id_producto").Value
-            Dim nombre As String = dgvInventario.SelectedRows(0).Cells("nombre").Value.ToString()
+            Dim nombre As String = dgvInventario.SelectedRows(0).Cells("Producto").Value.ToString()
             Dim descripcion As String = dgvInventario.SelectedRows(0).Cells("descripcion").Value.ToString()
             Dim precio As String = dgvInventario.SelectedRows(0).Cells("precio").Value.ToString()
             Dim cantidadStock As String = dgvInventario.SelectedRows(0).Cells("cantidad_stock").Value.ToString()
-            Dim categoria As String = dgvInventario.SelectedRows(0).Cells("id_categoria").Value.ToString()
-            Dim proveedor As String = dgvInventario.SelectedRows(0).Cells("id_proveedor").Value.ToString()
+            Dim categoria As String = dgvInventario.SelectedRows(0).Cells("Categoria").Value.ToString()
+            Dim proveedor As String = dgvInventario.SelectedRows(0).Cells("Proveedor").Value.ToString()
             Dim activo As String = dgvInventario.SelectedRows(0).Cells("activo").Value.ToString()
 
 
@@ -108,9 +108,9 @@ Public Class Inventario
             formulario.txtCantidadStock.Text = cantidadStock.ToString()
             formulario.cmbCategoria.SelectedValue = categoria
             formulario.cmbProveedor.SelectedValue = proveedor
-            formulario.cmbActivo.SelectedValue = If(activo, "Sí", "No")
+            'formulario.cmbActivo.SelectedValue = If(activo, "Sí", "No")
 
-
+            '
             ' Mostrar formulario
             formulario.ShowDialog()
 

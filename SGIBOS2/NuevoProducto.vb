@@ -70,7 +70,7 @@ Public Class NuevoProducto
 
 
             If idProducto > 0 Then
-                comando.Parameters.AddWithValue("@id_cliente", idProducto)
+                comando.Parameters.AddWithValue("@id_producto", idProducto)
             End If
 
             comando.ExecuteNonQuery()

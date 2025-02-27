@@ -22,12 +22,17 @@ Partial Class Ventas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.txtBuscarVentas = New System.Windows.Forms.TextBox()
         Me.btnBuscarVentas = New System.Windows.Forms.Button()
         Me.btnAñadirVen = New System.Windows.Forms.Button()
         Me.dgvVentas = New System.Windows.Forms.DataGridView()
         Me.btnGenerarReporteVen = New System.Windows.Forms.Button()
+        Me.cmsActEli5 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ActualizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.dgvVentas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.cmsActEli5.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtBuscarVentas
@@ -75,6 +80,25 @@ Partial Class Ventas
         Me.btnGenerarReporteVen.Text = "Generar reporte"
         Me.btnGenerarReporteVen.UseVisualStyleBackColor = True
         '
+        'cmsActEli5
+        '
+        Me.cmsActEli5.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.cmsActEli5.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ActualizarToolStripMenuItem, Me.EliminarToolStripMenuItem})
+        Me.cmsActEli5.Name = "cmsActEli5"
+        Me.cmsActEli5.Size = New System.Drawing.Size(241, 101)
+        '
+        'ActualizarToolStripMenuItem
+        '
+        Me.ActualizarToolStripMenuItem.Name = "ActualizarToolStripMenuItem"
+        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(240, 32)
+        Me.ActualizarToolStripMenuItem.Text = "Actualizar"
+        '
+        'EliminarToolStripMenuItem
+        '
+        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(240, 32)
+        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        '
         'Ventas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -88,6 +112,7 @@ Partial Class Ventas
         Me.Name = "Ventas"
         Me.Text = "Ventas"
         CType(Me.dgvVentas, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.cmsActEli5.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -98,4 +123,7 @@ Partial Class Ventas
     Friend WithEvents btnAñadirVen As Button
     Friend WithEvents dgvVentas As DataGridView
     Friend WithEvents btnGenerarReporteVen As Button
+    Friend WithEvents cmsActEli5 As ContextMenuStrip
+    Friend WithEvents ActualizarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
 End Class
