@@ -2,6 +2,7 @@
 Imports iTextSharp.text
 Imports iTextSharp.text.pdf
 Imports System.IO
+Imports MySql.Data.MySqlClient
 
 Public Class Reportes
 
@@ -101,4 +102,56 @@ Public Class Reportes
         End If
     End Sub
 
+
+    Private Sub btnExportarCSV_Click(sender As Object, e As EventArgs) Handles btnExportarCSV.Click
+        ' Configurar la conexión a MySQL
+        Dim connectionString As String = "server=localhost;user=root;password=mysql;database=tiendadb;"
+        Dim query As String = "SELECT * FROM Productos"
+
+        ' Crear y configurar el SaveFileDialog
+        Dim saveDialog As New SaveFileDialog()
+    saveDialog.Filter = "Archivos CSV (*.csv)|*.csv"
+    saveDialog.Title = "Guardar archivo CSV"
+        saveDialog.FileName = "reporte_inventario.csv"
+
+        ' Mostrar el cuadro de diálogo y verificar si el usuario seleccionó una ubicación
+        If saveDialog.ShowDialog() = DialogResult.OK Then
+        Dim savePath As String = saveDialog.FileName
+        Try
+            Using conn As New MySqlConnection(connectionString)
+                conn.Open()
+                Using cmd As New MySqlCommand(query, conn)
+                    Using reader As MySqlDataReader = cmd.ExecuteReader()
+                        If reader.HasRows Then
+                            Using writer As New StreamWriter(savePath, False, System.Text.Encoding.UTF8)
+                                ' Escribir encabezados
+                                Dim columnCount As Integer = reader.FieldCount
+                                Dim header As String = ""
+                                For i As Integer = 0 To columnCount - 1
+                                    header &= reader.GetName(i) & If(i < columnCount - 1, ",", "")
+                                Next
+                                writer.WriteLine(header)
+
+                                ' Escribir filas de datos
+                                While reader.Read()
+                                    Dim row As String = ""
+                                    For i As Integer = 0 To columnCount - 1
+                                        row &= reader(i).ToString().Replace(",", ";") & If(i < columnCount - 1, ",", "")
+                                    Next
+                                    writer.WriteLine(row)
+                                End While
+                            End Using
+                            MessageBox.Show("Datos exportados correctamente a: " & savePath, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        Else
+                            MessageBox.Show("No hay datos en la tabla Inventario.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        End If
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End If
+End Sub
 End Class
+
