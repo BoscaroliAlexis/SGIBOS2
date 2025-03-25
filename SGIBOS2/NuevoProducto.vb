@@ -2,6 +2,8 @@
 
 Public Class NuevoProducto
 
+    Public EsActualizar As Boolean = False
+
     Public idProducto As Integer = 0
 
     Dim comando As MySqlCommand
@@ -9,6 +11,8 @@ Public Class NuevoProducto
 
     ' Definir la conexión global
     Dim conexion As New MySqlConnection("Server=localhost;Database=tiendadb;User=root;Password=mysql;")
+
+
 
 
     Sub LlenarComboBox(ByVal consulta As String, ByVal combo As ComboBox, ByVal idCampo As String, ByVal nombreCampo As String)
@@ -26,17 +30,34 @@ Public Class NuevoProducto
         End Try
     End Sub
 
-    Sub CargarCombos()
+    Sub CargarComboCategoria()
         ' Llenar cmbCategoria con datos de la tabla Categorias
         LlenarComboBox("SELECT id_categoria, nombre FROM Categorias", cmbCategoria, "id_categoria", "nombre")
 
-        ' Llenar cmbProveedor con datos de la tabla Proveedores
-        LlenarComboBox("SELECT id_proveedor, nombre FROM Proveedores", cmbProveedor, "id_proveedor", "nombre")
+
+        cmbCategoria.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
 
-    Private Sub NuevoProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CargarCombos()
+    Sub CargarComboProveedor()
+        ' Llenar cmbProveedor con datos de la tabla Proveedores
+        LlenarComboBox("SELECT id_proveedor, nombre FROM Proveedores", cmbProveedor, "id_proveedor", "nombre")
+        cmbProveedor.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
+    Private Sub NuevoProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Not EsActualizar Then
+            CargarComboProveedor()
+            CargarComboCategoria()
+        End If
+    End Sub
+
+
+    Private Sub cmbCategoria_DropDown(sender As Object, e As EventArgs) Handles cmbCategoria.DropDown
+        CargarComboCategoria()
+    End Sub
+    Private Sub cmbProveedor_DropDown(sender As Object, e As EventArgs) Handles cmbProveedor.DropDown
+        CargarComboProveedor()
+    End Sub
+
 
     Private Sub btnAñadirPro_Click(sender As Object, e As EventArgs) Handles btnAñadirPro.Click
         ' Establecer conexión

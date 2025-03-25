@@ -98,21 +98,32 @@ Public Class Inventario
             Dim proveedor As String = dgvInventario.SelectedRows(0).Cells("Proveedor").Value.ToString()
             Dim activo As String = dgvInventario.SelectedRows(0).Cells("activo").Value.ToString()
 
+            MessageBox.Show("Categoría: " & categoria & vbCrLf & "Proveedor: " & proveedor, "Valores de Depuración")
+
+
 
             ' Crear instancia de NuevoCliente y pasar los datos
             Dim formulario As New NuevoProducto()
+
+            For Each item As DataRowView In formulario.cmbCategoria.Items
+                MessageBox.Show("ID: " & item("id_categoria").ToString() & " - Nombre: " & item("nombre").ToString())
+            Next
+
             formulario.idProducto = idProducto
             formulario.txtNombre.Text = nombre
             formulario.txtDescripcion.Text = descripcion
             formulario.txtPrecio.Text = precio.ToString()
             formulario.txtCantidadStock.Text = cantidadStock.ToString()
-            formulario.cmbCategoria.SelectedValue = categoria
-            formulario.cmbProveedor.SelectedValue = proveedor
+            formulario.cmbCategoria.Text = categoria.ToString()
+            formulario.cmbProveedor.Text = proveedor.ToString()
             'formulario.cmbActivo.SelectedValue = If(activo, "Sí", "No")
 
-            '
+            'Dim frm As New NuevoProducto()
+            formulario.EsActualizar = True ' Indica que se abrió en modo actualización
+
             ' Mostrar formulario
             formulario.ShowDialog()
+
 
             ' Actualizar DataGridView después de cerrar el formulario
             CargarDatos()
