@@ -13,7 +13,6 @@ Public Class Categorias
     Private Sub CargarDatos(Optional ByVal busqueda As String = "")
         Try
             ' Cadena de conexión (ajusta los valores según tu servidor)
-            Dim cadenaConexion As String = "Server=localhost;Database=tiendadb;Uid=root;Pwd=mysql;"
             conexion = New MySqlConnection(cadenaConexion)
             conexion.Open()
 

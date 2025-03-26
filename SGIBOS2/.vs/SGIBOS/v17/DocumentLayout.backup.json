@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevoproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevoproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevoproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|c:\\users\\alexi\\onedrive\\documentos\\github\\sgibos2\\sgibos2\\inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevoproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|solutionrelative:nuevoproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CC55F08-45B6-4967-BC8A-253B2FD1B126}|SGIBOS.vbproj|C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\nuevoventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -106,32 +106,31 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Inventario.vb",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb",
               "RelativeDocumentMoniker": "Inventario.vb",
               "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb",
               "RelativeToolTip": "Inventario.vb",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAmwHoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAgwHQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-02-18T14:02:00.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Inventario.vb [Design]",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb",
               "RelativeDocumentMoniker": "Inventario.vb",
               "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\Inventario.vb [Design]",
               "RelativeToolTip": "Inventario.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-18T14:01:57.713Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-18T14:01:57.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "NuevoProducto.vb [Design]",
               "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoProducto.vb",
               "RelativeDocumentMoniker": "NuevoProducto.vb",
@@ -149,7 +148,7 @@
               "RelativeDocumentMoniker": "NuevoProducto.vb",
               "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\SGIBOS2\\SGIBOS2\\NuevoProducto.vb",
               "RelativeToolTip": "NuevoProducto.vb",
-              "ViewState": "AgIAADUAAAAAAAAAAAAuwDkAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAowDkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-02-24T14:36:58.72Z",
               "EditorCaption": ""

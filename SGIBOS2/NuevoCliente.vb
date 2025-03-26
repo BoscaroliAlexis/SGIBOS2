@@ -9,8 +9,6 @@ Public Class NuevoCliente
     Dim conexion As MySqlConnection
     Dim comando As MySqlCommand
     Private Sub btnAñadirCli_Click(sender As Object, e As EventArgs) Handles btnAñadirCli.Click
-        ' Establecer conexión
-        Dim cadenaConexion As String = "Server=localhost;Database=tiendadb;Uid=root;Pwd=mysql;"
         Dim conexion As New MySqlConnection(cadenaConexion)
 
         Try
@@ -18,14 +16,11 @@ Public Class NuevoCliente
             Dim consulta As String
 
             If idCliente = 0 Then
-                ' INSERT si no hay un cliente seleccionado
                 consulta = "INSERT INTO Clientes (nombre, telefono, correo, direccion) VALUES (@nombre, @telefono, @correo, @direccion)"
             Else
-                ' UPDATE si se está editando un cliente
                 consulta = "UPDATE Clientes SET nombre=@nombre, telefono=@telefono, correo=@correo, direccion=@direccion WHERE id_cliente=@id_cliente"
             End If
 
-            ' Crear y ejecutar comando
             Dim comando As New MySqlCommand(consulta, conexion)
             comando.Parameters.AddWithValue("@nombre", txtNombre.Text)
             comando.Parameters.AddWithValue("@telefono", txtTelefono.Text)
@@ -39,7 +34,6 @@ Public Class NuevoCliente
             comando.ExecuteNonQuery()
             MessageBox.Show("Cliente guardado correctamente.")
 
-            ' Cerrar el formulario después de guardar
             Me.Close()
 
         Catch ex As Exception
@@ -49,5 +43,7 @@ Public Class NuevoCliente
         End Try
     End Sub
 
+    Private Sub NuevoCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class

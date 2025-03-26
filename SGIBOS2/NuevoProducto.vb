@@ -9,37 +9,27 @@ Public Class NuevoProducto
     Dim comando As MySqlCommand
 
 
-    ' Definir la conexión global
-    Dim conexion As New MySqlConnection("Server=localhost;Database=tiendadb;User=root;Password=mysql;")
-
-
-
 
     Sub LlenarComboBox(ByVal consulta As String, ByVal combo As ComboBox, ByVal idCampo As String, ByVal nombreCampo As String)
         Try
-            Dim adaptador As New MySqlDataAdapter(consulta, conexion)
+            Dim adaptador As New MySqlDataAdapter(consulta, cadenaConexion)
             Dim tabla As New DataTable()
             adaptador.Fill(tabla)
 
-            ' Configurar el ComboBox
             combo.DataSource = tabla
-            combo.DisplayMember = nombreCampo  ' Se muestra el nombre
-            combo.ValueMember = idCampo  ' Se guarda el ID
+            combo.DisplayMember = nombreCampo
+            combo.ValueMember = idCampo
         Catch ex As Exception
             MessageBox.Show("Error al llenar el ComboBox: " & ex.Message)
         End Try
     End Sub
 
     Sub CargarComboCategoria()
-        ' Llenar cmbCategoria con datos de la tabla Categorias
         LlenarComboBox("SELECT id_categoria, nombre FROM Categorias", cmbCategoria, "id_categoria", "nombre")
-
-
         cmbCategoria.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
 
     Sub CargarComboProveedor()
-        ' Llenar cmbProveedor con datos de la tabla Proveedores
         LlenarComboBox("SELECT id_proveedor, nombre FROM Proveedores", cmbProveedor, "id_proveedor", "nombre")
         cmbProveedor.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
@@ -61,7 +51,6 @@ Public Class NuevoProducto
 
     Private Sub btnAñadirPro_Click(sender As Object, e As EventArgs) Handles btnAñadirPro.Click
         ' Establecer conexión
-        Dim cadenaConexion As String = "Server=localhost;Database=tiendadb;Uid=root;Pwd=mysql;"
         Dim conexion As New MySqlConnection(cadenaConexion)
 
         Try
@@ -69,16 +58,13 @@ Public Class NuevoProducto
             Dim consulta As String
 
             If idProducto = 0 Then
-                ' INSERT si no hay un producto seleccionado
                 consulta = "INSERT INTO Productos (nombre, descripcion, precio, cantidad_stock, id_categoria, id_proveedor, fecha_creacion, activo) " &
                "VALUES (@nombre, @descripcion, @precio, @cantidad_stock, @id_categoria, @id_proveedor, NOW(), @activo)"
             Else
-                ' UPDATE si se está editando un producto
                 consulta = "UPDATE Productos SET nombre=@nombre, descripcion=@descripcion, precio=@precio, cantidad_stock=@cantidad_stock, " &
                "id_categoria=@id_categoria, id_proveedor=@id_proveedor, activo=@activo WHERE id_producto=@id_producto"
             End If
 
-            ' Crear y ejecutar comando
             Dim comando As New MySqlCommand(consulta, conexion)
             comando.Parameters.AddWithValue("@nombre", txtNombre.Text)
             comando.Parameters.AddWithValue("@descripcion", txtDescripcion.Text)
@@ -97,7 +83,6 @@ Public Class NuevoProducto
             comando.ExecuteNonQuery()
             MessageBox.Show("Producto guardado correctamente.")
 
-            ' Cerrar el formulario después de guardar
             Me.Close()
 
         Catch ex As Exception

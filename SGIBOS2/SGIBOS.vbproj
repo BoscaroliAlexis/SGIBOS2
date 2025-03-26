@@ -143,6 +143,7 @@
     <Compile Include="Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Conexion.vb" />
     <Compile Include="Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>

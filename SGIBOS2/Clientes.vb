@@ -4,21 +4,16 @@ Imports Newtonsoft.Json
 Imports SGIBOS.MySql.Data.MySqlClient
 
 Public Class Clientes
-    ' Declarar las variables a nivel de clase
     Dim conexion As MySqlConnection
     Dim comando As MySqlCommand
     Dim adaptador As MySqlDataAdapter
     Dim tabla As DataTable
 
-    ' Método para cargar los datos desde MySQL
     Private Sub CargarDatos(Optional ByVal busqueda As String = "")
         Try
-            ' Cadena de conexión (ajusta los valores según tu servidor)
-            Dim cadenaConexion As String = "Server=localhost;Database=tiendadb;Uid=root;Pwd=mysql;"
             conexion = New MySqlConnection(cadenaConexion)
             conexion.Open()
 
-            ' Si hay texto en el campo de búsqueda, se ajusta la consulta
             Dim consulta As String
             If busqueda = "" Then
                 consulta = "SELECT * FROM clientes" ' Muestra todos los registros
@@ -26,7 +21,6 @@ Public Class Clientes
                 consulta = "SELECT * FROM clientes WHERE nombre LIKE '%" & busqueda & "%'" ' Filtra por nombre
             End If
 
-            ' Ejecutar la consulta y llenar el DataGridView
             adaptador = New MySqlDataAdapter(consulta, conexion)
             tabla = New DataTable()
             adaptador.Fill(tabla)
@@ -39,8 +33,6 @@ Public Class Clientes
         End Try
     End Sub
 
-
-    ' Evento Load para cargar los datos cuando se abre el formulario
 
     Private Sub btnGenerarReporteCli_Click(sender As Object, e As EventArgs) Handles btnGenerarReporteCli.Click
         For Each frm As Form In Application.OpenForms
@@ -113,16 +105,13 @@ Public Class Clientes
 
         dgvClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect
 
-        ' Verificar si hay una fila seleccionada
         If dgvClientes.SelectedRows.Count > 0 Then
-            ' Obtener los datos del cliente seleccionado
             Dim idCliente As Integer = dgvClientes.SelectedRows(0).Cells("id_cliente").Value
             Dim nombre As String = dgvClientes.SelectedRows(0).Cells("nombre").Value.ToString()
             Dim telefono As String = dgvClientes.SelectedRows(0).Cells("telefono").Value.ToString()
             Dim correo As String = dgvClientes.SelectedRows(0).Cells("correo").Value.ToString()
             Dim direccion As String = dgvClientes.SelectedRows(0).Cells("direccion").Value.ToString()
 
-            ' Crear instancia de NuevoCliente y pasar los datos
             Dim formulario As New NuevoCliente()
             formulario.idCliente = idCliente
             formulario.txtNombre.Text = nombre
@@ -130,10 +119,8 @@ Public Class Clientes
             formulario.txtCorreo.Text = correo
             formulario.txtDireccion.Text = direccion
 
-            ' Mostrar formulario
             formulario.ShowDialog()
 
-            ' Actualizar DataGridView después de cerrar el formulario
             CargarDatos()
         Else
             MessageBox.Show("Seleccione un cliente para actualizar.")
@@ -141,16 +128,12 @@ Public Class Clientes
     End Sub
 
     Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
-        ' Verificar si hay una fila seleccionada
         If dgvClientes.SelectedRows.Count > 0 Then
-            ' Obtener el ID del cliente seleccionado
             Dim idCliente As Integer = dgvClientes.SelectedRows(0).Cells("id_cliente").Value
 
-            ' Confirmar eliminación
             Dim confirmacion As DialogResult = MessageBox.Show("¿Estás seguro de que deseas eliminar este cliente?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
             If confirmacion = DialogResult.Yes Then
-                ' Cadena de conexión
                 Dim cadenaConexion As String = "Server=localhost;Database=tiendadb;Uid=root;Pwd=mysql;"
                 Dim conexion As New MySqlConnection(cadenaConexion)
 
@@ -162,7 +145,7 @@ Public Class Clientes
                     comando.ExecuteNonQuery()
 
                     MessageBox.Show("Cliente eliminado correctamente.")
-                    CargarDatos() ' Refrescar el DataGridView
+                    CargarDatos()
                 Catch ex As Exception
                     MessageBox.Show("Error al eliminar: " & ex.Message)
                 Finally
@@ -177,14 +160,11 @@ Public Class Clientes
     Public Function ObtenerDatosClientes() As DataTable
         Dim dt As New DataTable()
 
-        ' Verificar que el DataGridView tenga datos
         If dgvClientes.Rows.Count > 0 Then
-            ' Crear columnas en el DataTable basadas en las columnas del DataGridView
             For Each col As DataGridViewColumn In dgvClientes.Columns
                 dt.Columns.Add(col.HeaderText)
             Next
 
-            ' Agregar las filas al DataTable
             For Each row As DataGridViewRow In dgvClientes.Rows
                 If Not row.IsNewRow Then
                     Dim newRow As DataRow = dt.NewRow()

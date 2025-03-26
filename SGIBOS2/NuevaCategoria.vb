@@ -7,8 +7,7 @@ Public Class NuevaCategoria
     Dim conexion As MySqlConnection
     Dim comando As MySqlCommand
     Private Sub btnGuardarCat_Click(sender As Object, e As EventArgs) Handles btnGuardarCat.Click
-        ' Establecer conexión
-        Dim cadenaConexion As String = "Server=localhost;Database=tiendadb;Uid=root;Pwd=mysql;"
+
         Dim conexion As New MySqlConnection(cadenaConexion)
 
         Try
@@ -16,10 +15,8 @@ Public Class NuevaCategoria
             Dim consulta As String
 
             If idCategoria = 0 Then
-                ' INSERT si no hay un cliente seleccionado
                 consulta = "INSERT INTO Categorias (nombre) VALUES (@nombre)"
             Else
-                ' UPDATE si se está editando un cliente
                 consulta = "UPDATE Categorias SET nombre=@nombre WHERE id_categoria=@id_categoria"
             End If
 
@@ -35,7 +32,6 @@ Public Class NuevaCategoria
             comando.ExecuteNonQuery()
             MessageBox.Show("Categoria guardada correctamente.")
 
-            ' Cerrar el formulario después de guardar
             Me.Close()
 
         Catch ex As Exception

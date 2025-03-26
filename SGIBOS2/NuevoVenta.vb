@@ -1,7 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class NuevoVenta
-    Private connectionString As String = "server=localhost;user id=root;password=mysql;database=tiendadb;"
     Private ventaID As Integer = -1
     Public Property VentaSeleccionada As Integer
 
@@ -18,7 +17,7 @@ Public Class NuevoVenta
 
     Private Sub CargarDetalleVenta()
         Try
-            Using conn As New MySqlConnection(connectionString)
+            Using conn As New MySqlConnection(cadenaConexion)
                 conn.Open()
                 Dim query As String = "SELECT * FROM detalle_ventas WHERE id_venta = @idVenta"
                 Using cmd As New MySqlCommand(query, conn)

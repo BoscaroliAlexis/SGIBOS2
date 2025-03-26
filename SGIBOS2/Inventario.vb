@@ -20,7 +20,6 @@ Public Class Inventario
     Private Sub CargarDatos(Optional ByVal busqueda As String = "")
         Try
             ' Cadena de conexión (ajusta según tu configuración)
-            Dim cadenaConexion As String = "Server=localhost;Database=tiendadb;Uid=root;Pwd=mysql;"
             conexion = New MySqlConnection(cadenaConexion)
             conexion.Open()
 
@@ -128,7 +127,7 @@ Public Class Inventario
             ' Actualizar DataGridView después de cerrar el formulario
             CargarDatos()
         Else
-            MessageBox.Show("Seleccione un cliente para actualizar.")
+            MessageBox.Show("Seleccione un producto para actualizar.")
         End If
     End Sub
 

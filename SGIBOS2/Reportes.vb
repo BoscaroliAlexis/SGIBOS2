@@ -35,7 +35,6 @@ Public Class Reportes
         Dim tituloReporte As String = ""
         Dim nombreArchivo As String = ""
 
-        ' Determinar qué tipo de reporte se debe generar
         If cmbTipo.SelectedItem.ToString() = "Clientes" Then
             dataTable = dtClientes
             tituloReporte = "Reporte de Clientes"
@@ -49,13 +48,11 @@ Public Class Reportes
             Return
         End If
 
-        ' Verificar si hay datos en el DataTable
         If dataTable Is Nothing OrElse dataTable.Rows.Count = 0 Then
             MessageBox.Show("No hay datos para exportar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
 
-        ' Crear el cuadro de diálogo para guardar el PDF
         Dim saveFileDialog As New SaveFileDialog()
         saveFileDialog.Filter = "Archivo PDF|*.pdf"
         saveFileDialog.Title = "Guardar Reporte PDF"
@@ -67,30 +64,25 @@ Public Class Reportes
                 Dim writer As PdfWriter = PdfWriter.GetInstance(doc, New FileStream(saveFileDialog.FileName, FileMode.Create))
                 doc.Open()
 
-                ' Agregar título
                 Dim titulo As New Paragraph(tituloReporte & vbCrLf & vbCrLf, FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16, BaseColor.BLACK))
                 titulo.Alignment = Element.ALIGN_CENTER
                 doc.Add(titulo)
 
-                ' Crear tabla con el número de columnas
                 Dim pdfTable As New PdfPTable(dataTable.Columns.Count)
                 pdfTable.WidthPercentage = 100
 
-                ' Agregar encabezados
                 For Each column As DataColumn In dataTable.Columns
                     Dim cell As New PdfPCell(New Phrase(column.ColumnName, FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 10, BaseColor.WHITE)))
                     cell.BackgroundColor = BaseColor.DARK_GRAY
                     pdfTable.AddCell(cell)
                 Next
 
-                ' Agregar filas del DataTable
                 For Each row As DataRow In dataTable.Rows
                     For Each item In row.ItemArray
                         pdfTable.AddCell(New Phrase(item.ToString(), FontFactory.GetFont(FontFactory.HELVETICA, 10, BaseColor.BLACK)))
                     Next
                 Next
 
-                ' Agregar la tabla al documento
                 doc.Add(pdfTable)
                 doc.Close()
 
@@ -103,10 +95,7 @@ Public Class Reportes
     End Sub
 
     Private Sub btnExportarCSV_Click(sender As Object, e As EventArgs) Handles btnExportarCSV.Click
-        ' Configurar la conexión a MySQL
-        Dim connectionString As String = "server=localhost;user=root;password=mysql;database=tiendadb;"
 
-        ' Obtener la tabla correspondiente según la selección del ComboBox
         Dim tablaSeleccionada As String = ""
         Dim nombreArchivo As String = ""
 
@@ -140,13 +129,12 @@ Public Class Reportes
         If saveDialog.ShowDialog() = DialogResult.OK Then
             Dim savePath As String = saveDialog.FileName
             Try
-                Using conn As New MySqlConnection(connectionString)
+                Using conn As New MySqlConnection(cadenaConexion)
                     conn.Open()
                     Using cmd As New MySqlCommand(query, conn)
                         Using reader As MySqlDataReader = cmd.ExecuteReader()
                             If reader.HasRows Then
                                 Using writer As New StreamWriter(savePath, False, System.Text.Encoding.UTF8)
-                                    ' Escribir encabezados
                                     Dim columnCount As Integer = reader.FieldCount
                                     Dim header As String = ""
                                     For i As Integer = 0 To columnCount - 1
@@ -154,7 +142,6 @@ Public Class Reportes
                                     Next
                                     writer.WriteLine(header)
 
-                                    ' Escribir filas de datos
                                     While reader.Read()
                                         Dim row As String = ""
                                         For i As Integer = 0 To columnCount - 1
