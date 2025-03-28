@@ -54,9 +54,10 @@ Partial Class NuevoVenta
         '
         'btnAñadirVen
         '
-        Me.btnAñadirVen.Location = New System.Drawing.Point(94, 350)
+        Me.btnAñadirVen.Location = New System.Drawing.Point(63, 227)
+        Me.btnAñadirVen.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAñadirVen.Name = "btnAñadirVen"
-        Me.btnAñadirVen.Size = New System.Drawing.Size(195, 61)
+        Me.btnAñadirVen.Size = New System.Drawing.Size(130, 40)
         Me.btnAñadirVen.TabIndex = 0
         Me.btnAñadirVen.Text = "Añadir "
         Me.btnAñadirVen.UseVisualStyleBackColor = True
@@ -64,27 +65,30 @@ Partial Class NuevoVenta
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(19, 46)
+        Me.Label1.Location = New System.Drawing.Point(13, 30)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 20)
+        Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Num. de venta:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(19, 95)
+        Me.Label2.Location = New System.Drawing.Point(13, 62)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(77, 20)
+        Me.Label2.Size = New System.Drawing.Size(53, 13)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Producto:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(15, 138)
+        Me.Label3.Location = New System.Drawing.Point(10, 90)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(124, 20)
+        Me.Label3.Size = New System.Drawing.Size(85, 13)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "ID detalle venta:"
         '
@@ -104,9 +108,11 @@ Partial Class NuevoVenta
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(23, 21)
+        Me.GroupBox1.Location = New System.Drawing.Point(15, 14)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(966, 448)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox1.Size = New System.Drawing.Size(644, 291)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Detalle de venta"
@@ -114,184 +120,205 @@ Partial Class NuevoVenta
         'dgvDetalleVenta
         '
         Me.dgvDetalleVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDetalleVenta.Location = New System.Drawing.Point(434, 46)
+        Me.dgvDetalleVenta.Location = New System.Drawing.Point(289, 30)
+        Me.dgvDetalleVenta.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvDetalleVenta.Name = "dgvDetalleVenta"
         Me.dgvDetalleVenta.RowHeadersWidth = 62
         Me.dgvDetalleVenta.RowTemplate.Height = 28
-        Me.dgvDetalleVenta.Size = New System.Drawing.Size(483, 293)
+        Me.dgvDetalleVenta.Size = New System.Drawing.Size(322, 190)
         Me.dgvDetalleVenta.TabIndex = 13
         '
         'lblSubtotal
         '
         Me.lblSubtotal.AutoSize = True
-        Me.lblSubtotal.Location = New System.Drawing.Point(172, 298)
+        Me.lblSubtotal.Location = New System.Drawing.Point(115, 194)
+        Me.lblSubtotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSubtotal.Name = "lblSubtotal"
-        Me.lblSubtotal.Size = New System.Drawing.Size(40, 20)
+        Me.lblSubtotal.Size = New System.Drawing.Size(28, 13)
         Me.lblSubtotal.TabIndex = 12
         Me.lblSubtotal.Text = "0.00"
         '
         'txtPrecioUni
         '
-        Me.txtPrecioUni.Location = New System.Drawing.Point(172, 231)
+        Me.txtPrecioUni.Location = New System.Drawing.Point(115, 150)
+        Me.txtPrecioUni.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPrecioUni.Name = "txtPrecioUni"
-        Me.txtPrecioUni.Size = New System.Drawing.Size(190, 26)
+        Me.txtPrecioUni.Size = New System.Drawing.Size(128, 20)
         Me.txtPrecioUni.TabIndex = 11
         '
         'txtCantidad
         '
-        Me.txtCantidad.Location = New System.Drawing.Point(172, 183)
+        Me.txtCantidad.Location = New System.Drawing.Point(115, 119)
+        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(190, 26)
+        Me.txtCantidad.Size = New System.Drawing.Size(128, 20)
         Me.txtCantidad.TabIndex = 10
         '
         'txtIDdetalle
         '
-        Me.txtIDdetalle.Location = New System.Drawing.Point(172, 138)
+        Me.txtIDdetalle.Location = New System.Drawing.Point(115, 90)
+        Me.txtIDdetalle.Margin = New System.Windows.Forms.Padding(2)
         Me.txtIDdetalle.Name = "txtIDdetalle"
-        Me.txtIDdetalle.Size = New System.Drawing.Size(190, 26)
+        Me.txtIDdetalle.Size = New System.Drawing.Size(128, 20)
         Me.txtIDdetalle.TabIndex = 9
         '
         'cmbProducto
         '
         Me.cmbProducto.FormattingEnabled = True
-        Me.cmbProducto.Location = New System.Drawing.Point(172, 86)
+        Me.cmbProducto.Location = New System.Drawing.Point(115, 56)
+        Me.cmbProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbProducto.Name = "cmbProducto"
-        Me.cmbProducto.Size = New System.Drawing.Size(190, 28)
+        Me.cmbProducto.Size = New System.Drawing.Size(128, 21)
         Me.cmbProducto.TabIndex = 8
         '
         'txtNumVenta
         '
-        Me.txtNumVenta.Location = New System.Drawing.Point(172, 46)
+        Me.txtNumVenta.Location = New System.Drawing.Point(115, 30)
+        Me.txtNumVenta.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNumVenta.Name = "txtNumVenta"
-        Me.txtNumVenta.Size = New System.Drawing.Size(190, 26)
+        Me.txtNumVenta.Size = New System.Drawing.Size(128, 20)
         Me.txtNumVenta.TabIndex = 7
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(19, 298)
+        Me.Label6.Location = New System.Drawing.Point(13, 194)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(73, 20)
+        Me.Label6.Size = New System.Drawing.Size(49, 13)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Subtotal:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(15, 237)
+        Me.Label5.Location = New System.Drawing.Point(10, 154)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(113, 20)
+        Me.Label5.Size = New System.Drawing.Size(77, 13)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Precio unitario:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(15, 183)
+        Me.Label4.Location = New System.Drawing.Point(10, 119)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 20)
+        Me.Label4.Size = New System.Drawing.Size(52, 13)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Cantidad:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(145, 521)
+        Me.Label7.Location = New System.Drawing.Point(97, 339)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(115, 20)
+        Me.Label7.Size = New System.Drawing.Size(80, 13)
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "Num. de venta:"
         '
         'txtNumVenta2
         '
-        Me.txtNumVenta2.Location = New System.Drawing.Point(285, 518)
+        Me.txtNumVenta2.Location = New System.Drawing.Point(190, 337)
+        Me.txtNumVenta2.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNumVenta2.Name = "txtNumVenta2"
-        Me.txtNumVenta2.Size = New System.Drawing.Size(190, 26)
+        Me.txtNumVenta2.Size = New System.Drawing.Size(128, 20)
         Me.txtNumVenta2.TabIndex = 13
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(141, 582)
+        Me.Label8.Location = New System.Drawing.Point(94, 378)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(123, 20)
+        Me.Label8.Size = New System.Drawing.Size(85, 13)
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Fecha de venta:"
         '
         'lblFechaActual
         '
         Me.lblFechaActual.AutoSize = True
-        Me.lblFechaActual.Location = New System.Drawing.Point(297, 582)
+        Me.lblFechaActual.Location = New System.Drawing.Point(198, 378)
+        Me.lblFechaActual.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblFechaActual.Name = "lblFechaActual"
-        Me.lblFechaActual.Size = New System.Drawing.Size(135, 20)
+        Me.lblFechaActual.Size = New System.Drawing.Size(91, 13)
         Me.lblFechaActual.TabIndex = 15
         Me.lblFechaActual.Text = "00-00-0000 00.00"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(578, 524)
+        Me.Label9.Location = New System.Drawing.Point(385, 341)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(113, 20)
+        Me.Label9.Size = New System.Drawing.Size(79, 13)
         Me.Label9.TabIndex = 16
         Me.Label9.Text = "Total de venta:"
         '
         'lblTotalVenta
         '
         Me.lblTotalVenta.AutoSize = True
-        Me.lblTotalVenta.Location = New System.Drawing.Point(734, 524)
+        Me.lblTotalVenta.Location = New System.Drawing.Point(489, 341)
+        Me.lblTotalVenta.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTotalVenta.Name = "lblTotalVenta"
-        Me.lblTotalVenta.Size = New System.Drawing.Size(40, 20)
+        Me.lblTotalVenta.Size = New System.Drawing.Size(28, 13)
         Me.lblTotalVenta.TabIndex = 17
         Me.lblTotalVenta.Text = "0.00"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(578, 580)
+        Me.Label11.Location = New System.Drawing.Point(385, 377)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(129, 20)
+        Me.Label11.Size = New System.Drawing.Size(88, 13)
         Me.Label11.TabIndex = 18
         Me.Label11.Text = "Metodo de pago:"
         '
         'cmbMetodoPago
         '
         Me.cmbMetodoPago.FormattingEnabled = True
-        Me.cmbMetodoPago.Location = New System.Drawing.Point(734, 572)
+        Me.cmbMetodoPago.Location = New System.Drawing.Point(489, 372)
+        Me.cmbMetodoPago.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbMetodoPago.Name = "cmbMetodoPago"
-        Me.cmbMetodoPago.Size = New System.Drawing.Size(190, 28)
+        Me.cmbMetodoPago.Size = New System.Drawing.Size(128, 21)
         Me.cmbMetodoPago.TabIndex = 13
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(156, 643)
+        Me.Label12.Location = New System.Drawing.Point(104, 418)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(62, 20)
+        Me.Label12.Size = New System.Drawing.Size(42, 13)
         Me.Label12.TabIndex = 19
         Me.Label12.Text = "Cliente:"
         '
         'txtCliente
         '
-        Me.txtCliente.Location = New System.Drawing.Point(297, 637)
+        Me.txtCliente.Location = New System.Drawing.Point(198, 414)
+        Me.txtCliente.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCliente.Name = "txtCliente"
-        Me.txtCliente.Size = New System.Drawing.Size(190, 26)
+        Me.txtCliente.Size = New System.Drawing.Size(128, 20)
         Me.txtCliente.TabIndex = 20
         '
         'btnGuardarSalir
         '
-        Me.btnGuardarSalir.Location = New System.Drawing.Point(430, 714)
+        Me.btnGuardarSalir.Location = New System.Drawing.Point(287, 464)
+        Me.btnGuardarSalir.Margin = New System.Windows.Forms.Padding(2)
         Me.btnGuardarSalir.Name = "btnGuardarSalir"
-        Me.btnGuardarSalir.Size = New System.Drawing.Size(195, 61)
+        Me.btnGuardarSalir.Size = New System.Drawing.Size(130, 40)
         Me.btnGuardarSalir.TabIndex = 13
         Me.btnGuardarSalir.Text = "Guardar y salir"
         Me.btnGuardarSalir.UseVisualStyleBackColor = True
         '
         'NuevoVenta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1030, 793)
+        Me.ClientSize = New System.Drawing.Size(687, 487)
         Me.Controls.Add(Me.btnGuardarSalir)
         Me.Controls.Add(Me.txtCliente)
         Me.Controls.Add(Me.Label12)
@@ -304,6 +331,7 @@ Partial Class NuevoVenta
         Me.Controls.Add(Me.txtNumVenta2)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "NuevoVenta"
         Me.Text = "Venta"
         Me.GroupBox1.ResumeLayout(False)
